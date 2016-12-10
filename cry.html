@@ -1,0 +1,28 @@
+<body id="b" onload="cry()">
+    <img src="og.gif">
+    <style>
+        body img{
+            position: absolute;
+            left:0;
+            top:0;
+            -webkit-animation: tada 0.5s infinite; /* Safari 4+ */
+            -moz-animation:    tada 0.5s infinite; /* Fx 5+ */
+            -o-animation:      tada 0.5s infinite; /* Opera 12+ */
+            animation:         tada 0.5s infinite;
+        }
+        @keyframes tada {
+            0%   {width: 100vw;height: 100vh;}
+            100% {width: 150vw;height: 150vh;}
+        }
+    </style>
+    <script>
+        function cry() {
+            var audio = new Audio('sound.mp3');
+            audio.loop = true;
+            audio.play();
+        }
+        window.onbeforeunload = function (e) {
+            return 'You afraid m8?';
+        };
+    </script>
+</body>

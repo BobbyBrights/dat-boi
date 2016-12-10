@@ -1,7 +1,12 @@
 body {
-    text-align: right;
+    text-align: center;
 }
 
 h1 {
     font-size: 42px;
+}
+.clickBait:hover{
+    color: dodgerblue;
+    font-size: 50px;
+    cursor: progress;
 }
