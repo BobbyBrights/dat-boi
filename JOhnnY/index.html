@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Thank You ♥</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<header>
+		<div class="video" id="video">
+			<script>
+		        var videos = ["https://www.youtube.com/embed/9lbNLzRRNGw?autoplay=1&controls=0&showinfo=0&rel=0", "https://www.youtube.com/embed/-QWJSDEC9ts?autoplay=1&controls=0&showinfo=0&rel=0", "https://www.youtube.com/embed/dq9FAjFCZ5s?autoplay=1&controls=0&showinfo=0&rel=0" , "https://www.youtube.com/embed/iTC_0moVwq8?autoplay=1&controls=0&showinfo=0&rel=0", "https://www.youtube.com/embed/ZO7rDQ5XcIk?autoplay=1&controls=0&showinfo=0&rel=0" , "https://www.youtube.com/embed/fV9IJVoFR_Q?autoplay=1&controls=0&showinfo=0&rel=0", "https://www.youtube.com/embed/ljrgs4TzkTQ?autoplay=1&controls=0&showinfo=0&rel=0", "https://www.youtube.com/embed/Uvav3JOhFBs?autoplay=1&controls=0&showinfo=0&rel=0", "https://www.youtube.com/embed/RXCYDzZ0U34?autoplay=1&controls=0&showinfo=0&rel=0", "https://www.youtube.com/embed/QT7TNx5D5hM?autoplay=1&controls=0&showinfo=0&rel=0", "https://www.youtube.com/embed/0FKTlGghKNI?autoplay=1&controls=0&showinfo=0&rel=0", "https://www.youtube.com/embed/y8NCxjUlAg8?autoplay=1&controls=0&showinfo=0&rel=0"];
+		        window.onload = function () {
+		            var playerDiv = document.getElementById("video");
+		            var player = document.createElement("IFRAME");
+		            var randomVideoUrl = videos[Math.floor(Math.random() * videos.length)];
+		            player.setAttribute('src', randomVideoUrl);
+		            player.setAttribute('frameborder', '0');
+		            playerDiv.appendChild(player);
+		        };
+		    </script>
+		    <img src="img/theempyrean.jpg" class="empyrean">
+		    <img src="img/curtains.jpg" class="curtains">
+			<div>
+				<h1>OUR ONLY GOD<br>JOHN FRUSCIANTE</h1>
+			</div>
+		</div>
+	</header>
+</body>
+</html>
