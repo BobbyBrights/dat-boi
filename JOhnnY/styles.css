@@ -32,6 +32,11 @@
     font-family: "Roboto Slab", serif;
     color: white;
     font-weight: bolder;
+    -webkit-transform: rotate(1deg);
+    -moz-transform: rotate(1deg);
+    -o-transform: rotate(1deg);
+    -ms-transform: rotate(1deg);
+    transform: rotate(1deg);
 }
 .video iframe
 {
@@ -44,24 +49,25 @@
 }
 .video > img.empyrean
 {
-	position: absolute;
-	width: 15%;
-	height: 110%;
-	bottom: 0;
-	top: 0;
-	right: 0;
+    position: absolute;
+    width: 15%;
+    height: 100%;
+    bottom: 0;
+    top: 0;
+    right: 0;
     z-index: -1;
     -webkit-filter: blur(3px);
     -moz-filter: blur(3px);
     -o-filter: blur(3px);
     -ms-filter: blur(3px);
     filter: blur(3px);
+    border: 20px dotted #535353;
 }
 .video > img.curtains
 {
 	position: absolute;
-	height: 120%;
-    left: -50%;
+    height: 120%;
+    left: -100vh;
     z-index: -1;
     -webkit-transform: rotate(-10deg);
     -moz-transform: rotate(-10deg);
