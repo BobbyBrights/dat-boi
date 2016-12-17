@@ -1,5 +1,8 @@
 body {
     text-align: center;
+    background: url("../img/esl.jpg");
+    background-position: center;
+    background-size: 300%;
 }
 
 h1 {
