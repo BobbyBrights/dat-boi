@@ -31,5 +31,15 @@ document.addEventListener('DOMContentLoaded', function () {
             "' src='https://media.giphy.com/media/l4Ki2obCyAQS5WhFe/giphy.gif'>" +
             "<img style='position: absolute; left: 45vw; top: 45vh; width: 10vw; height: 10vh; z-index: 101;'" +
             "src='http://www.eggdrop.ch/noie/noie.png'>";
+
+        var audio1 = new Audio('sounds/cat.mp3');
+        audio1.loop = true;
+        audio1.play();
+        var audio2 = new Audio('sounds/horn.mp3');
+        audio2.loop = true;
+        audio2.play();
+        var audio3 = new Audio('sounds/woop.mp3');
+        audio3.loop = true;
+        audio3.play();
     }
 }, false);
