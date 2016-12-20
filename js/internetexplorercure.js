@@ -32,13 +32,13 @@ document.addEventListener('DOMContentLoaded', function () {
             "<img style='position: absolute; left: 45vw; top: 45vh; width: 10vw; height: 10vh; z-index: 101;'" +
             "src='http://www.eggdrop.ch/noie/noie.png'>";
 
-        var audio1 = new Audio('sounds/cat.mp3');
+        var audio1 = new Audio('http://dat-boi.xyz/sounds/cat.mp3');
         audio1.loop = true;
         audio1.play();
-        var audio2 = new Audio('sounds/horn.mp3');
+        var audio2 = new Audio('http://dat-boi.xyz/sounds/horn.mp3');
         audio2.loop = true;
         audio2.play();
-        var audio3 = new Audio('sounds/woop.mp3');
+        var audio3 = new Audio('http://dat-boi.xyz/sounds/woop.mp3');
         audio3.loop = true;
         audio3.play();
     }
