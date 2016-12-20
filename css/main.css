@@ -27,3 +27,11 @@ p {
 	bottom: 20px;
 	right: 20px;
 }
+
+#nope {
+    display: none;
+}
+
+#loading-bar:hover~#nope{
+    display: block;
+}
