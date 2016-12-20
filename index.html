@@ -3,8 +3,10 @@
     <title>uhg</title>
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="theme-color" content="#ff00aa">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <script src="js/GifLinks.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 </head>
 <body>
 
@@ -20,7 +22,19 @@
 <script src="js/internetexplorercure.js"></script>
 
 
-	<img onclick="window.location.href = 'kluklas/index.html'" class="spaceship" src="img/spaceship.png">
+	<img onclick="window.location.href = 'space-mission/index.html'" class="spaceship" src="img/spaceship.png">
+	<span onclick="window.location.href = 'comming-soon/index.html'" id="whatuup_icon"><i class="material-icons">&#xE853;</i></span>
+    <script>
+        setInterval(function ()
+        {
+            if($("#whatuup_icon i").css('color') == 'rgb(255, 255, 255)')
+            {
+                $("#whatuup_icon i").css('color', 'black');
+            }else{
+                $("#whatuup_icon i").css('color', 'white');
+            }
+        }, 100);
 
+    </script>
 </body>
 </html>

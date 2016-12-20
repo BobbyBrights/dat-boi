@@ -35,3 +35,12 @@ p {
 #loading-bar:hover~#nope{
     display: block;
 }
+#whatuup_icon i{
+
+    position: fixed;
+    font-size: 50px;
+    color: white;
+    top: 10px;
+    left: 10px;
+    cursor: help;
+}
