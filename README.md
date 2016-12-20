@@ -13,3 +13,5 @@ oh shit waddup
 8. if this is your first day at dem boiz, you have to commit
 9. nobody is the center of dem boiz
 10. dem boiz will always be free.
+
+I'm wrting this because of rule nr. 8
