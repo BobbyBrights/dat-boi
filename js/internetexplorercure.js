@@ -24,12 +24,12 @@ function iecure_detectIE() {
     return false;
 }
 document.addEventListener('DOMContentLoaded', function () {
-    if(iecure_detectIE()){
+    if(!iecure_detectIE()){
         console.log("aww gawwd its an ie");
-        document.body.innerHTML = "<img style='" +
+        document.body.innerHTML = "<img class='vibrate' style='" +
             "position: absolute; left: 0; top: 0; width: 100vw; height: 100vh; z-index: 100;" +
             "' src='https://media.giphy.com/media/l4Ki2obCyAQS5WhFe/giphy.gif'>" +
-            "<img style='position: absolute; left: 45vw; top: 45vh; width: 10vw; height: 10vh; z-index: 101;'" +
+            "<img class='vibrate' style='position: absolute; left: 45vw; top: 45vh; width: 10vw; height: 10vh; z-index: 101;'" +
             "src='http://www.eggdrop.ch/noie/noie.png'>";
 
         var audio1 = new Audio('http://dat-boi.xyz/sounds/cat.mp3');
@@ -41,5 +41,23 @@ document.addEventListener('DOMContentLoaded', function () {
         var audio3 = new Audio('http://dat-boi.xyz/sounds/woop.mp3');
         audio3.loop = true;
         audio3.play();
+
+        vibrateLoop();
     }
 }, false);
+function vibrateLoop() {
+    var vibElements = document.getElementsByClassName("vibrate");
+    var way = 5;
+    var loop = setInterval(function () {
+        way = -way;
+        vibrateLoopDo(vibElements, way);
+    },30);
+}
+function vibrateLoopDo(elements, way) {
+    for(var i = 0; i < elements.length; i++){
+        var rec = elements[i].getBoundingClientRect();
+        elements[i].style.top = rec.top + way;
+        elements[i].style.left = rec.left + way;
+        console.log(rec.top);
+    }
+}
