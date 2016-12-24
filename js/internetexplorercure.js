@@ -24,7 +24,7 @@ function iecure_detectIE() {
     return false;
 }
 document.addEventListener('DOMContentLoaded', function () {
-    if(!iecure_detectIE()){
+    if(iecure_detectIE()){
         console.log("aww gawwd its an ie");
         document.body.innerHTML = "<img class='vibrate' style='" +
             "position: absolute; left: 0; top: 0; width: 100vw; height: 100vh; z-index: 100;" +
