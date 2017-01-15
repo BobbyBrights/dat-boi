@@ -1,0 +1,122 @@
+#area{
+    height: 100%;
+    width: 100%;
+    background-image: url("img/space.gif");
+
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+#controll_area{
+
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 55%;
+    border-top: 1px solid #dddddd;
+    background-color: transparent;
+}
+#ship{
+    position: fixed;
+    width: 80px;
+    bottom: -100px;
+    left: 40%;
+    background-color: transparent;
+
+    z-index: 900;
+}
+.traitor{
+    position: absolute;
+    width: 60px;
+    height: 28px;
+    background: transparent;
+    background-image: url("img/traitor_1.png");
+
+    z-index: 800;
+}
+.bullet{
+    position: absolute;
+    width: 4px;
+    height: 10px;
+    border-radius: 22px;
+    opacity: 1;
+
+    background-color: yellow;
+    z-index: 999;
+}
+.button{
+    position: fixed;
+    outline: none;
+    border: none;
+    background-color: red;
+    color: #fff;
+    font-family: Verdana;
+    font-size: 17px;
+    height: 75px;
+    width: 75px;
+    padding: 10px;
+    border-radius: 50px;
+    left: 40%;
+    bottom: 50%;
+    z-index: 99;
+}
+.counter{
+
+    font-family: Verdana;
+    font-size: 40px;
+    color: yellow;
+
+    position: fixed;
+    right: 10px;
+    top: 0px;
+    z-index: 996;
+}
+.info_1{
+
+    font-family: Verdana;
+    font-size: 10px;
+    color: yellow;
+
+    position: fixed;
+    right: 13px;
+    top: 18px;
+    z-index: 994;
+}
+.info_2{
+
+    font-family: Verdana;
+    font-size: 10px;
+    color: yellow;
+
+    position: fixed;
+    right: 13px;
+    top: 0px;
+    z-index: 994;
+}
+.info_3{
+
+    font-family: Verdana;
+    font-size: 10px;
+    color: yellow;
+
+    position: fixed;
+    right: 13px;
+    top: 80px;
+    z-index: 994;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

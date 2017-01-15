@@ -18,3 +18,29 @@ p {
     font-size: 50px;
     cursor: progress;
 }
+
+.spaceship{
+
+	position: fixed;
+	width: 100px;
+	height: 100px;
+	bottom: 20px;
+	right: 20px;
+}
+
+#nope {
+    display: none;
+}
+
+#loading-bar:hover~#nope{
+    display: block;
+}
+#whatuup_icon i{
+
+    position: fixed;
+    font-size: 50px;
+    color: white;
+    top: 10px;
+    left: 10px;
+    cursor: help;
+}

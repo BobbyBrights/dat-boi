@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>This nigga got me</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<div class="wrapper">
+	  <div class="aspect-ratio-fill">
+	    <div class="ProgressiveMedia">
+	      <canvas class="ProgressiveMedia__canvas" width="75" height="38.671875">
+	      </canvas>
+	      <img class="ProgressiveMedia__image" data-src="Ye.jpg"/>
+	      <img class="ProgressiveMedia__thumbnail" src="Ye.jpg"/>
+	    </div>
+	  </div>
+	</div>
+
+	<div class="details-wrapper">
+	  <div class="details">
+	    <button class="Button" id="show">Show Canvas</button>
+	    <div class="Settings">
+	      <label title="The time of the fade transition in seconds or milliseconds"> 
+	        <div class="Settings__text">Transition Time:</div>
+	        <input class="Settings__input" id="transitionTime" type="text" value="400ms" placeholder="time" maxLength="10"/>
+	      </label>
+	    </div>
+	    <div class="Settings">
+	      <label title="The max width of wrapper"> 
+	        <div class="Settings__text">Wrapper Width:</div>
+	        <input class="Settings__input" id="width" type="text" value="900px" placeholder="Wrapper Width" maxLength="10"/>
+	      </label>
+	    </div>
+	    <div class="Settings">
+	      <label title="The blur radius">
+	        <div class="Settings__text">Canvas Blur:</div>
+	        <div class="Settings__range__text" id="rangeText">180</div>
+	        <input class="Settings__range" id="blur" type="range" value="7" placeholder="Blur" min="0" max="100"/>
+	      </label>
+	    </div>
+	  </div>
+	</div>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script type="text/javascript" src="dayearly.js"></script>
+</body>
+</html>
