@@ -35,8 +35,23 @@ header
   height: 50px;
   background-color: rgba(0, 0, 0, 0.5);
 }
-p
+header h5
 {
-    color: white;
-    font-family: "Yasashii";
+  margin: 0;
+  font-size: 40px;
+  color: #fc8e8e;
+  font-family: "Yasashii";
+  line-height: 40px;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  display: block;
+}
+header img
+{
+    position: absolute;
+    height:40px;
+    width: 40px;
+    top: 5px;
+    right: 5px;
 }
