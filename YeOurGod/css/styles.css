@@ -55,3 +55,14 @@ header img
     top: 5px;
     right: 5px;
 }
+
+.album
+{
+        position: fixed;
+    width: 100%;
+    top: 200px;
+    bottom: 0;
+    /* margin: auto; */
+    background-color: rgba(145, 80, 80, 0.44);
+    border: #bd7c8e solid 30px;
+}
