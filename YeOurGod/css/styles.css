@@ -1,0 +1,68 @@
+@font-face {
+  font-family: 'Yasashii';
+  src:  url('fonts/Yasashii.ttf') format('truetype');
+}
+#background {
+    width:100%;
+    height:100vh;
+    top:0;left:0;
+    position: fixed;
+}
+#background > div{
+    display:block;
+    width:100%;
+    height:100%;
+    background-color:black;
+}
+#background > div > div{
+    display: block;
+    width:100%;
+    height:100%;
+    background: linear-gradient(150deg, rgba(0, 0, 0, 0.25) , rgb(0, 0, 0)), url(../Ye.jpg) center center no-repeat;
+    background-size: cover;
+    -webkit-filter: blur(20px);
+    -moz-filter: blur(15px);
+    -o-filter: blur(15px);
+    -ms-filter: blur(15px);
+    filter: blur(15px);
+    opacity: 0.95;
+}
+
+header
+{
+  position: fixed;
+  top: 0; right: 0; left: 0;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+header h5
+{
+  margin: 0;
+  font-size: 40px;
+  color: #fc8e8e;
+  font-family: "Yasashii";
+  line-height: 40px;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  display: block;
+}
+header img
+{
+    position: absolute;
+    height:40px;
+    width: 40px;
+    top: 5px;
+    right: 5px;
+}
+
+.album
+{
+        position: fixed;
+    width: 100%;
+    top: 200px;
+    bottom: 0;
+    /* margin: auto; */
+    background-color: rgba(145, 80, 80, 0.44);
+    border: #bd7c8e solid 30px;
+}
