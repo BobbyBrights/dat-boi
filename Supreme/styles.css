@@ -1,0 +1,14 @@
+@font-face {
+  font-family: 'Future';
+  src: url('css/fonts/gg.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Yasashii';
+  src:  url('css/fonts/Yasashii.ttf') format('truetype');
+}
+p
+{
+	font-family: "Future";
+	color: white;
+	background-color: red;
+}

@@ -1,0 +1,45 @@
+body
+{
+	overflow: hidden;
+}
+.bodyBackground
+{
+	position: fixed;
+	overflow: hidden;
+	width: 100%;
+	height: 100vh;
+}
+.bodyBackground div
+{
+	-webkit-animation: GradientRotation 12s steps(120) infinite;
+    animation: GradientRotation 12s steps(120) infinite;
+    margin-left: -25%;
+    margin-top: -75%;
+    min-height: 150%;
+    min-width: 150%;
+    padding-bottom: 75%;
+    padding-top: 75%;
+        background: -webkit-radial-gradient(70% 70% ellipse,#ee583f 8%,#d92d77 42%,#bd3381 58%);
+    background: radial-gradient(ellipse at 70% 70%,#ee583f 8%,#d92d77 42%,#bd3381 58%);
+    height: 100%;
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+    
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes GradientRotation {
+	0%
+	{
+		transform: rotate(0deg);
+	}
+} 
+
+/* Standard syntax */ 
+@keyframes GradientRotation {
+	100%
+	{
+		transform: rotate(360deg);	
+	}
+}

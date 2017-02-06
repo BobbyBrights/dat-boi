@@ -1,0 +1,14 @@
+@font-face {
+  font-family: 'Future';
+  src: url('lol.ttf')  format('truetype');
+}
+body
+{
+	background-image: url("http://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag=american+psycho");
+}
+h1
+{
+	font-family: "Future";
+	color: white;
+	background-color: red;
+}
