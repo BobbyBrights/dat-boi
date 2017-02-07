@@ -15,7 +15,6 @@
 }
 .bodyBackground div
 {
-	-webkit-animation: GradientRotation 12s steps(120) infinite;
     animation: GradientRotation 12s steps(120) infinite;
     margin-left: -75%;
     margin-top: -175%;
@@ -23,54 +22,99 @@
     min-width: 350%;
     padding-bottom: 175%;
     padding-top: 175%;
-	background: #ff6e7f; /* fallback for old browsers */
-	background: -webkit-linear-gradient(to left, #ff6e7f , #bfe9ff); /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to left, #ff6e7f , #bfe9ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+	background: #ff6e7f;
+	background: -webkit-linear-gradient(to left, #ff6e7f , #bfe9ff);
+	background: linear-gradient(to left, #ff6e7f , #bfe9ff);
     height: 100%;
     pointer-events: none;
     position: absolute;
     width: 100%;
 }
-@-webkit-keyframes GradientRotation {
+@keyframes GradientRotation {
 	0%
 	{
 		transform: rotate(0deg);
 	}
-}
-@keyframes GradientRotation {
 	100%
 	{
 		transform: rotate(360deg);	
 	}
 }
 
-.logo
+.body-content
 {
-	height: 400px;
-	margin: 0 200px;
-	text-align: center;
+	max-width: 80vw;
+	margin: 0 auto;
+	margin-top: 10vw;
+	min-height: 100vh;
+	background-color: white;
+	z-index: 1;
+	border-radius: 2px;
 }
-.logo:before {
+
+.content-logo
+{
+	width: 100%;
+	height: 500px;
+	background: #e53935;
+	background: -webkit-linear-gradient(-45deg, #e53935 , #e35d5b);
+	background: linear-gradient(-45deg, #e53935 , #e35d5b);
+	text-align: center;
+	position: relative;
+}
+.content-logo:before {
   content: '';
   display: inline-block;
   height: 100%;
   vertical-align: middle;
   margin-right: -0.25em;
 }
-.logo h1
+.content-logo h1
 {
 	display: inline-block;
   	vertical-align: middle;
 	margin: 0;
-	font-size: 100px;
+	font-size: 200px;
 	font-family: 'Yasashii';
-	color: #444;
+	color: white;
+}
+.content-logo img
+{
+	position: absolute;
+	height: 100%;
+	top: 0;
+	right: 0;
+	animation: ImgOpacity 3s infinite;
+}
+@keyframes ImgOpacity {
+	0%	{opacity: 1;}	2%	{opacity: 1;}	4%	{opacity: 1;}	6%	{opacity: 1;}	8%	{opacity: 1;}	10%	{opacity: 1;}	12%	{opacity: 1;}	14%	{opacity: 1;}	16%	{opacity: 1;}	18%	{opacity: 1;}	20%	{opacity: 1;}	22%	{opacity: 1;}	24%	{opacity: 1;}	26%	{opacity: 1;}	28%	{opacity: 0;}	30%	{opacity: 1;}	32%	{opacity: 0;}	34%	{opacity: 1;}	36%	{opacity: 0;}	38%	{opacity: 1;}	40%	{opacity: 0;}	42%	{opacity: 1;}	44%	{opacity: 0;}	46%	{opacity: 1;}	48%	{opacity: 0;}	50%	{opacity: 1;}	51%	{opacity: 1;}	52%	{opacity: 1;}	53%	{opacity: 1;}	54%	{opacity: 1;}	55%	{opacity: 1;}	56%	{opacity: 1;}	57%	{opacity: 1;}	58%	{opacity: 1;}	5%	{opacity: 1;}	60%	{opacity: 1;}	62%	{opacity: 1;}	64%	{opacity: 1;}	66%	{opacity: 1;}	68%	{opacity: 1;}	70%	{opacity: 1;}	72%	{opacity: 0;}	74%	{opacity: 1;}	76%	{opacity: 0;}	78%	{opacity: 1;}	80%	{opacity: 0;}	82%	{opacity: 1;}	84%	{opacity: 1;}	86%	{opacity: 1;}	88%	{opacity: 1;}	90%	{opacity: 0;}	91%	{opacity: 1;}	92%	{opacity: 0;}	93%	{opacity: 1;}	94%	{opacity: 0;}	95%	{opacity: 1;}	96%	{opacity: 0;}	97%	{opacity: 1;}	98%	{opacity: 0;}	99%	{opacity: 1;}	100%	{opacity: 0;}
 }
 
-.body-content
-{
-	margin: 0 200px;
-	min-height: 100vh;
-	background-color: white;
-	z-index: 1;
+
+
+
+@media only screen and (max-width: 1080px) {
+	.body-content
+	{
+		max-width: 90vw;
+		margin-top: 5vw;
+	}
+	.content-logo
+	{
+		height: 300px;
+	}
+	.content-logo h1
+	{
+		font-size: 130px;
+	}
+}
+@media only screen and (max-width: 720px) {
+	.content-logo
+	{
+		height: 150px;
+	}
+	.content-logo h1
+	{
+		font-size: 60px;
+	}
 }
