@@ -2,6 +2,32 @@
   font-family: 'Yasashii';
   src:  url('fonts/Yasashii.otf');
 }
+@font-face {
+  font-family: 'Butler';
+  src:  url('fonts/Butler.otf');
+}
+@font-face {
+  font-family: 'Circular';
+  src:  url('fonts/Circular.otf');
+}
+
+.textCenter
+{
+	text-align: center;
+}
+.textCenter:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -0.25em;
+}
+.textCenter h1
+{
+	display: inline-block;
+  	vertical-align: middle;
+	margin: 0;
+}
 
 .bodyBackground
 {
@@ -46,10 +72,9 @@
 	max-width: 80vw;
 	margin: 0 auto;
 	margin-top: 10vw;
-	min-height: 100vh;
 	background-color: white;
 	z-index: 1;
-	border-radius: 2px;
+	border-radius: 2px 2px 0 0;
 }
 
 .content-logo
@@ -59,21 +84,11 @@
 	background: #e53935;
 	background: -webkit-linear-gradient(-45deg, #e53935 , #e35d5b);
 	background: linear-gradient(-45deg, #e53935 , #e35d5b);
-	text-align: center;
 	position: relative;
-}
-.content-logo:before {
-  content: '';
-  display: inline-block;
-  height: 100%;
-  vertical-align: middle;
-  margin-right: -0.25em;
+	border-radius: 2px 2px 0 0;
 }
 .content-logo h1
 {
-	display: inline-block;
-  	vertical-align: middle;
-	margin: 0;
 	font-size: 200px;
 	font-family: 'Yasashii';
 	color: white;
@@ -90,6 +105,38 @@
 	0%	{opacity: 1;}	2%	{opacity: 1;}	4%	{opacity: 1;}	6%	{opacity: 1;}	8%	{opacity: 1;}	10%	{opacity: 1;}	12%	{opacity: 1;}	14%	{opacity: 1;}	16%	{opacity: 1;}	18%	{opacity: 1;}	20%	{opacity: 1;}	22%	{opacity: 1;}	24%	{opacity: 1;}	26%	{opacity: 1;}	28%	{opacity: 0;}	30%	{opacity: 1;}	32%	{opacity: 0;}	34%	{opacity: 1;}	36%	{opacity: 0;}	38%	{opacity: 1;}	40%	{opacity: 0;}	42%	{opacity: 1;}	44%	{opacity: 0;}	46%	{opacity: 1;}	48%	{opacity: 0;}	50%	{opacity: 1;}	51%	{opacity: 1;}	52%	{opacity: 1;}	53%	{opacity: 1;}	54%	{opacity: 1;}	55%	{opacity: 1;}	56%	{opacity: 1;}	57%	{opacity: 1;}	58%	{opacity: 1;}	5%	{opacity: 1;}	60%	{opacity: 1;}	62%	{opacity: 1;}	64%	{opacity: 1;}	66%	{opacity: 1;}	68%	{opacity: 1;}	70%	{opacity: 1;}	72%	{opacity: 0;}	74%	{opacity: 1;}	76%	{opacity: 0;}	78%	{opacity: 1;}	80%	{opacity: 0;}	82%	{opacity: 1;}	84%	{opacity: 1;}	86%	{opacity: 1;}	88%	{opacity: 1;}	90%	{opacity: 0;}	91%	{opacity: 1;}	92%	{opacity: 0;}	93%	{opacity: 1;}	94%	{opacity: 0;}	95%	{opacity: 1;}	96%	{opacity: 0;}	97%	{opacity: 1;}	98%	{opacity: 0;}	99%	{opacity: 1;}	100%	{opacity: 0;}
 }
 
+.content-row
+{
+	height: 400px;
+	margin: 0;
+}
+.content-row div
+{
+	height: 100%;
+}
+.content-row div:nth-child(1)
+{
+	background: linear-gradient(-30deg, #2b5876 , #4e4376);
+	color: white;
+	font-family: 'Butler';
+	text-transform: uppercase;
+}
+.content-row div:nth-child(1) h1
+{
+	font-size: 80px;
+}
+.content-row div:nth-child(2)
+{
+	background: linear-gradient(to left, #ffb347 , #ffcc33);
+	color: white;
+	font-family: 'Circular';
+	text-transform: uppercase;
+}
+.content-row div:nth-child(2) h1
+{
+	font-size: 80px;
+}
+
 
 
 
@@ -98,6 +145,7 @@
 	{
 		max-width: 90vw;
 		margin-top: 5vw;
+		margin-bottom: 5vw;
 	}
 	.content-logo
 	{
