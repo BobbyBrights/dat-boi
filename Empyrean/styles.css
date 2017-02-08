@@ -10,6 +10,10 @@
   font-family: 'Circular';
   src:  url('fonts/Circular.otf');
 }
+@font-face {
+  font-family: 'Hogl';
+  src:  url('fonts/Hogl.otf');
+}
 
 .textCenter
 {
@@ -48,8 +52,6 @@
     min-width: 350%;
     padding-bottom: 175%;
     padding-top: 175%;
-	background: #ff6e7f;
-	background: -webkit-linear-gradient(to left, #ff6e7f , #bfe9ff);
 	background: linear-gradient(to left, #ff6e7f , #bfe9ff);
     height: 100%;
     pointer-events: none;
@@ -70,8 +72,7 @@
 .body-content
 {
 	max-width: 80vw;
-	margin: 0 auto;
-	margin-top: 10vw;
+	margin: 10vw auto;
 	background-color: white;
 	z-index: 1;
 	border-radius: 2px 2px 0 0;
@@ -81,17 +82,21 @@
 {
 	width: 100%;
 	height: 500px;
-	background: #e53935;
-	background: -webkit-linear-gradient(-45deg, #e53935 , #e35d5b);
 	background: linear-gradient(-45deg, #e53935 , #e35d5b);
 	position: relative;
 	border-radius: 2px 2px 0 0;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
 }
 .content-logo h1
 {
 	font-size: 200px;
 	font-family: 'Yasashii';
 	color: white;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
 }
 .content-logo img
 {
@@ -113,28 +118,70 @@
 .content-row div
 {
 	height: 100%;
+	position: relative;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
 }
-.content-row div:nth-child(1)
+.content-row div:hover
+{
+	cursor: pointer;
+}
+.content-row div:hover h1
+{
+	font-size: 110px
+}
+.content-row div > h1
+{
+	font-size: 100px;
+    line-height: 150px;
+    z-index: 2;
+    position: absolute;
+    display: inline-block;
+    right: 0;
+    left: 0;
+    top: calc(50% - 75px);
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	transition: all 0.1s;
+}
+.content-row div > img
+{
+	position: absolute;
+	height: 100%;
+	z-index: 1;
+}
+.blue-col
 {
 	background: linear-gradient(-30deg, #2b5876 , #4e4376);
 	color: white;
 	font-family: 'Butler';
 	text-transform: uppercase;
 }
-.content-row div:nth-child(1) h1
+.blue-col img
 {
-	font-size: 80px;
+	left: 10%;
 }
-.content-row div:nth-child(2)
+.yellow-col
 {
 	background: linear-gradient(to left, #ffb347 , #ffcc33);
 	color: white;
 	font-family: 'Circular';
 	text-transform: uppercase;
 }
-.content-row div:nth-child(2) h1
+.yellow-col img
 {
-	font-size: 80px;
+	right: 0;
+	left: 0;
+	margin: 0 auto;
+}
+.green-col
+{
+	background: linear-gradient(to left, #90c26d , #a3b65a);
+	color: white;
+	font-family: 'Hogl';
+	text-transform: uppercase;
 }
 
 
@@ -144,8 +191,7 @@
 	.body-content
 	{
 		max-width: 90vw;
-		margin-top: 5vw;
-		margin-bottom: 5vw;
+		margin: 5vw auto;
 	}
 	.content-logo
 	{
