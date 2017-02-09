@@ -17,20 +17,43 @@
 			<h1>Empyrean</h1>
 		</div>
 		<div class="row content-row">
-			<div class="col-xs-12 col-md-6 textCenter yellow-col">
+			<div class="col-xs-12 col-md-6 textCenter yellow-col col-photo">
 				<h1>Pictures</h1>
 				<img src="img/todd.png">
 			</div>
-			<div class="col-xs-12 col-md-6 textCenter blue-col">
+			<div class="col-xs-12 col-md-6 textCenter blue-col col-photo">
 				<h1>Clips</h1>
 				<img src="img/lala.png">
 			</div>
 		</div>
 		<div class="row content-row">
-			<div class="col-md-12 col-xs-12 textCenter green-col">
+			<div class="col-md-12 col-xs-12 textCenter green-col col-photo">
 				<h1>About us</h1>
 			</div>
 		</div>
 	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$('document').ready(function(){
+		$('.content-row > div')
+		  // tile mouse actions
+		  .on('mouseover', function() {
+		    $(this).children('img').css({
+		      'transform': 'scale(1.1, 1.1)'
+		    });
+		  })
+		  .on('mouseout', function() {
+		    $(this).children('img').css({
+		      'transform': 'scale(1)'
+		    });
+		  })
+		  .on('mousemove', function(e) {
+		    $(this).children('img').css({
+		      'transform-origin': ((e.pageX - $(this).offset().left) / $(this).width()) * 50 + '% ' + ((e.pageY - $(this).offset().top) / $(this).height()) * 50 + '%'
+		    });
+		  });
+		});
+	</script>
 </body>
 </html>
