@@ -15,6 +15,30 @@
   src:  url('fonts/Hogl.otf');
 }
 
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+body
+{
+	font-family: "Circular";
+}
+
+/*Background Colors*/
+.supremered
+{
+	background: linear-gradient(-45deg, #e53935 , #e35d5b);
+	color: white;
+}
+.tuskan
+{
+	background: linear-gradient(to left, #F5ACAD , #F9DD9E);
+	color: white;
+}
+.nadeshikopink
+{
+	background: linear-gradient(10deg, rgba(224, 196, 215, 0.5) , rgba(245, 172, 173, 0.33));
+	color: white;
+}
+
 .textCenter
 {
 	text-align: center;
@@ -52,7 +76,6 @@
     min-width: 350%;
     padding-bottom: 175%;
     padding-top: 175%;
-	background: linear-gradient(to left, #ff6e7f , #bfe9ff);
     height: 100%;
     pointer-events: none;
     position: absolute;
@@ -68,12 +91,25 @@
 		transform: rotate(360deg);	
 	}
 }
+.bodyBackgroundBlueRed
+{
+	background: linear-gradient(to left, #ff6e7f , #bfe9ff);
+}
+.bodyBackgroundApril
+{
+	background-image:
+	    linear-gradient(
+	      30deg,  
+	      #C4E7B5,
+	      #DAD6CE, 
+	      #F5ACAD
+	    );
+}
 
 .body-content
 {
 	max-width: 80vw;
 	margin: 10vw auto;
-	background-color: white;
 	z-index: 1;
 	border-radius: 2px 2px 0 0;
 }
@@ -82,7 +118,6 @@
 {
 	width: 100%;
 	height: 500px;
-	background: linear-gradient(-45deg, #e53935 , #e35d5b);
 	position: relative;
 	border-radius: 2px 2px 0 0;
 	-webkit-user-select: none;
@@ -93,27 +128,36 @@
 {
 	font-size: 200px;
 	font-family: 'Yasashii';
-	color: white;
 	-webkit-user-select: none;
 	-moz-user-select: none;
 	-ms-user-select: none;
 }
-.content-logo img
+.content-logo-2d
 {
 	position: absolute;
 	height: 100%;
 	top: 0;
 	right: 0;
-	animation: ImgOpacity 3s infinite;
+	animation: OpacityTwoD 3s infinite;
 }
-@keyframes ImgOpacity {
+.content-logo-kaori
+{
+	position: absolute;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+@keyframes OpacityTwoD {
 	0%	{opacity: 1;}	2%	{opacity: 1;}	4%	{opacity: 1;}	6%	{opacity: 1;}	8%	{opacity: 1;}	10%	{opacity: 1;}	12%	{opacity: 1;}	14%	{opacity: 1;}	16%	{opacity: 1;}	18%	{opacity: 1;}	20%	{opacity: 1;}	22%	{opacity: 1;}	24%	{opacity: 1;}	26%	{opacity: 1;}	28%	{opacity: 0;}	30%	{opacity: 1;}	32%	{opacity: 0;}	34%	{opacity: 1;}	36%	{opacity: 0;}	38%	{opacity: 1;}	40%	{opacity: 0;}	42%	{opacity: 1;}	44%	{opacity: 0;}	46%	{opacity: 1;}	48%	{opacity: 0;}	50%	{opacity: 1;}	51%	{opacity: 1;}	52%	{opacity: 1;}	53%	{opacity: 1;}	54%	{opacity: 1;}	55%	{opacity: 1;}	56%	{opacity: 1;}	57%	{opacity: 1;}	58%	{opacity: 1;}	5%	{opacity: 1;}	60%	{opacity: 1;}	62%	{opacity: 1;}	64%	{opacity: 1;}	66%	{opacity: 1;}	68%	{opacity: 1;}	70%	{opacity: 1;}	72%	{opacity: 0;}	74%	{opacity: 1;}	76%	{opacity: 0;}	78%	{opacity: 1;}	80%	{opacity: 0;}	82%	{opacity: 1;}	84%	{opacity: 1;}	86%	{opacity: 1;}	88%	{opacity: 1;}	90%	{opacity: 0;}	91%	{opacity: 1;}	92%	{opacity: 0;}	93%	{opacity: 1;}	94%	{opacity: 0;}	95%	{opacity: 1;}	96%	{opacity: 0;}	97%	{opacity: 1;}	98%	{opacity: 0;}	99%	{opacity: 1;}	100%	{opacity: 0;}
 }
 
+.row
+{
+	margin: 0;
+}
 .content-row
 {
 	height: 400px;
-	margin: 0;
 }
 .content-row div
 {
@@ -167,8 +211,6 @@
 }
 .yellow-col
 {
-	background: linear-gradient(to left, #ffb347 , #ffcc33);
-	color: white;
 	font-family: 'Circular';
 	text-transform: uppercase;
 }
@@ -186,6 +228,63 @@
 	text-transform: uppercase;
 }
 
+.pic-col
+{
+	overflow: hidden;
+	height: 400px;
+	padding: 0;
+	position: relative;
+	transition: all 0.2s;
+}
+.pic-col img
+{
+	min-height: 100%;
+    min-width: 100%;
+    position: absolute;
+    top: -9999px;
+    bottom: -9999px;
+    left: -9999px;
+    right: -9999px;
+    margin: auto;
+    transition: transform 0.3s, filter 0.3s;
+}
+.pic-col > div
+{
+	position: absolute;
+	top: 0; left: 0;
+	width: 100%;
+	height: 100%;
+	display: table;
+	visibility: hidden;
+	opacity: 0;
+	transition: all 0.3s;
+}
+.pic-col > div > div
+{
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+.pic-col > div > div h2
+{
+	font-size: 50px;
+}
+.pic-col:hover
+{
+	z-index: 2;
+	box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+	transform: scale(1.05);
+	cursor: pointer;
+}
+.pic-col:hover img
+{
+	filter: blur(10px);
+}
+.pic-col:hover.pic-col > div
+{
+	visibility: visible;
+	opacity: 1;
+}
 
 
 
@@ -212,5 +311,9 @@
 	.content-logo h1
 	{
 		font-size: 60px;
+	}
+	.pic-col
+	{
+		height: 200px;
 	}
 }

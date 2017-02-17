@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>2D?</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<div class="bodyBackground">
+		<div class="bodyBackgroundApril"></div>
+	</div>
+
+	<div class="body-content">
+		<div class="content-logo textCenter tuskan">
+			<h1>Pictures</h1>
+			<img src="img/kaori.png" class="content-logo-kaori">
+		</div>
+
+		<div class="row picMouseMove">
+			<div class="col-md-6 col-lg-4 pic-col">
+				<img src="img/thumbs/deer.jpg">
+				<div class="nadeshikopink">
+					<div>
+						<h2>Das Reh</h2>
+						<h3>Jonas Volken</h3>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 col-lg-4 pic-col">
+				<img src="img/thumbs/girls.jpg">
+				<div class="nadeshikopink">
+					<div>
+						<h2>Die drei Mädchen</h2>
+						<h3>Sercan Dapar</h3>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 col-lg-4 pic-col">
+				<img src="img/thumbs/hat.jpg">
+				<div class="nadeshikopink">
+					<div>
+						<h2>Emma Stone Lookalike</h2>
+						<h3>Robin Renker</h3>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 col-lg-4 pic-col">
+				<img src="img/thumbs/leafs.jpg">
+				<div class="nadeshikopink">
+					<div>
+						<h2>Herbst</h2>
+						<h3>Robin Renker</h3>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 col-lg-4 pic-col">
+				<img src="img/thumbs/mountains.jpg">
+				<div class="nadeshikopink">
+					<div>
+						<h2>Wandern im Nebel</h2>
+						<h3>Jonas Volken</h3>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 col-lg-4 pic-col">
+				<img src="img/thumbs/photo.jpg">
+				<div class="nadeshikopink">
+					<div>
+						<h2>Weibliches Spiegelbild</h2>
+						<h3>Sercan Dapar</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$('document').ready(function(){
+		$('.picMouseMove > div')
+		  // tile mouse actions
+		  .on('mouseover', function() {
+		    $(this).children('img').css({
+		      'transform': 'scale(1.1, 1.1)'
+		    });
+		  })
+		  .on('mouseout', function() {
+		    $(this).children('img').css({
+		      'transform': 'scale(1)'
+		    });
+		  })
+		  .on('mousemove', function(e) {
+		    $(this).children('img').css({
+		      'transform-origin': ((e.pageX - $(this).offset().left) / $(this).width()) * 50 + '% ' + ((e.pageY - $(this).offset().top) / $(this).height()) * 50 + '%'
+		    });
+		  });
+		});
+	</script>
+</body>
+</html>

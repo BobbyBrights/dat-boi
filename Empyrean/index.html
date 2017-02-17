@@ -8,16 +8,16 @@
 </head>
 <body>
 	<div class="bodyBackground">
-		<div></div>
+		<div class="bodyBackgroundBlueRed"></div>
 	</div>
 
 	<div class="body-content">
-		<div class="content-logo textCenter">
-			<img src="img/2d2.png">
+		<div class="supremered content-logo textCenter">
+			<img src="img/2d2.png" class="content-logo-2d">
 			<h1>Empyrean</h1>
 		</div>
-		<div class="row content-row">
-			<div class="col-xs-12 col-md-6 textCenter yellow-col col-photo">
+		<div class="row content-row picMouseMove">
+			<div class="col-xs-12 col-md-6 textCenter yellow-col tuskan col-photo">
 				<h1>Pictures</h1>
 				<img src="img/todd.png">
 			</div>
@@ -36,7 +36,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script type="text/javascript">
 		$('document').ready(function(){
-		$('.content-row > div')
+		$('.picMouseMove > div')
 		  // tile mouse actions
 		  .on('mouseover', function() {
 		    $(this).children('img').css({
