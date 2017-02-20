@@ -7,6 +7,14 @@
 	<link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
+
+	<nav>
+		<p id="navtext">Empyrean</p>
+		<p>About Us</p>
+		<p class="lalablue">Clips</p>
+		<p class="tuskan">Pictures</p>		
+	</nav>
+
 	<div class="bodyBackground">
 		<div class="bodyBackgroundApril"></div>
 	</div>
@@ -79,23 +87,31 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script type="text/javascript">
 		$('document').ready(function(){
-		$('.picMouseMove > div')
-		  // tile mouse actions
-		  .on('mouseover', function() {
-		    $(this).children('img').css({
-		      'transform': 'scale(1.1, 1.1)'
-		    });
-		  })
-		  .on('mouseout', function() {
-		    $(this).children('img').css({
-		      'transform': 'scale(1)'
-		    });
-		  })
-		  .on('mousemove', function(e) {
-		    $(this).children('img').css({
-		      'transform-origin': ((e.pageX - $(this).offset().left) / $(this).width()) * 50 + '% ' + ((e.pageY - $(this).offset().top) / $(this).height()) * 50 + '%'
-		    });
-		  });
+			$('.picMouseMove > div')
+			  // tile mouse actions
+			  .on('mouseover', function() {
+			    $(this).children('img').css({
+			      'transform': 'scale(1.1, 1.1)'
+			    });
+			  })
+			  .on('mouseout', function() {
+			    $(this).children('img').css({
+			      'transform': 'scale(1)'
+			    });
+			  })
+			  .on('mousemove', function(e) {
+			    $(this).children('img').css({
+			      'transform-origin': ((e.pageX - $(this).offset().left) / $(this).width()) * 50 + '% ' + ((e.pageY - $(this).offset().top) / $(this).height()) * 50 + '%'
+			    });
+			  });
+
+
+			var empyrean = ["Empyrean", "3mPyr34N", "3|\/||>\-/.-34N", "El empíreo", "Empyrée", "empyreo", "zeruetan", "えｍｐｙれあん", "سماء", "pinakamataas na langit", "JOhnnY", "qiellor", "raj", "Empireo", "Empireum", "эмпиреи", "Justin itself", "maybe god", "music sometimes", "BARD IS LOVE", "Empyre@n", "EMPYREAN", "e◘m◘p◘y◘r◘e◘a◘n", "E•M•P•Y•R•E•A•N", "♥♥♥♥♥♥♥♥"];
+			window.setInterval(function () {
+				var ivern = Math.floor(Math.random() * (25 - 0 + 1)) + 0;
+				document.getElementById("navtext").innerHTML = empyrean[ivern];
+	    	}, 3000);
+		
 		});
 	</script>
 </body>

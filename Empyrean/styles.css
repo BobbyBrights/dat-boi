@@ -22,6 +22,33 @@ body
 	font-family: "Circular";
 }
 
+nav
+{
+	height: 50px;
+	background-image: url(img/ivern.gif);
+    background-size: 100% 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+nav p
+{
+	font-family: "Yasashii";
+	line-height: 50px;
+	font-size: 30px;
+	display: inline-block;
+	float: right;
+	padding: 0 10px 0 5px;
+}
+nav p:first-child
+{
+	color: white;
+	background-color: #e53935;
+	float: left;
+}
+
 /*Background Colors*/
 .supremered
 {
@@ -31,6 +58,11 @@ body
 .tuskan
 {
 	background: linear-gradient(to left, #F5ACAD , #F9DD9E);
+	color: white;
+}
+.lalablue
+{
+	background: linear-gradient(-30deg, #2b5876 , #4e4376);
 	color: white;
 }
 .nadeshikopink
@@ -200,8 +232,6 @@ body
 }
 .blue-col
 {
-	background: linear-gradient(-30deg, #2b5876 , #4e4376);
-	color: white;
 	font-family: 'Butler';
 	text-transform: uppercase;
 }
